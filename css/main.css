@@ -249,7 +249,6 @@
     margin: 20px 0;
   }
   
-  
   /* -------------------- Mobile Styles - Homepage -------------------- */
   
   /* Hero Area */
@@ -257,7 +256,6 @@
   .hero-area {
     background: url(../img/unplugged-retreat.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     min-height: 500px;
     display: flex;
@@ -367,6 +365,22 @@
     flex-flow: row wrap;
   }
   
+  .map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 80%; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+  
   .contact-section {
     background-color: #2a423a;
     display: flex;
@@ -378,22 +392,6 @@
   .contact-content p {
     margin: 0;
   }
-
-  .map figure {
-    width: 100%;
-    height: 0; 
-    padding-bottom: 80%; 
-    overflow: hidden;
-    position: relative;
-}
- 
-.map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-}
   
   /* ==========================================================================
      FAQ Page
@@ -665,6 +663,10 @@
       width: 40%;
     }
   
+    .map figure {
+      padding-bottom: 45.5%;
+    }
+    
     .contact-section .content-wrapper h2 {
       width: 80%;
     }
@@ -760,6 +762,9 @@
     /* ==========================================================================
     About Page
     ========================================================================== */
+    .map figure {
+      padding-bottom: 37.5%;
+    }
   
     .mission h2,
     .contact-section .content-wrapper h2 {
